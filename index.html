@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Native cA</title>
+  <!--Link to my CSS file ----->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Hamburger button -->
+<button class="menu-toggle">☰</button>
+
+ <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Discover Sri Lanka</h1>
+      <p class="hero-slogan">Culture • Adventure • Relaxation</p>
+      <button class="hero-btn" onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' });">
+        Explore Now
+     </button>
+  </section>
+
+<div class="bg-slideshow">
+  <div class="bg-slide" style="background-image: url('bg1.jpg');"></div>
+  <div class="bg-slide" style="background-image: url('bg2.jpg');"></div>
+  <div class="bg-slide" style="background-image: url('bg3.jpg');"></div>
+</div>
+
+  <header>
+       
+     <div class="brand">  
+      <img src="logo.png" alt="CA Native Logo" class="logo">
+      <span class="brand-name">Native cA</span><br>
+     </div>
+
+     <br>  <center><span class="slogan">Dream! Discover! Do It With Us.</span></center>
+     <h1 class="slogan">Empowering Your Journey</h1>
+     <!-- Single navbar-->
+      <nav class="navbar">
+        <!-- Hamburger button -->
+        <button class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- Navigation links -->
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+  </header>
+
+</main> <!-- close main properly -->
+
+  <p>Learn more at <a href="https://example.com">Native cA</a></p>
+  
+<section id="about">
+  <h2>About Native cA</h2>
+  <p>
+    At <strong>Native cA</strong>, we believe every journey should be more than just a trip — 
+    it should be an unforgettable experience. Founded with a passion for discovery and a love for 
+    Sri Lanka’s rich culture and natural beauty, we are dedicated to helping travelers dream, 
+    discover, and do it with us.
+  </p>
+  <p>
+    Our team specializes in creating personalized travel experiences, from vibrant city tours 
+    and relaxing beach holidays to thrilling wildlife safaris and immersive cultural encounters. 
+    Whether you’re exploring ancient heritage sites, tasting authentic local cuisine, or 
+    embarking on adventurous excursions, we ensure every detail is handled with care.
+  </p>
+  <p>
+    With <strong>Native cA</strong>, you’re not just visiting destinations — you’re 
+    connecting with stories, traditions, and people that make each place unique. 
+    Let us guide you to the heart of Sri Lanka and beyond.
+  </p>
+</section>
+
+
+
+  <!-- Services List-->
+<section id="services" class="services-section">
+  <!-- service cards -->
+</section>
+
+  <h2 id="services">Our Services</h2>
+
+  <section class="services-section">
+  <h2 class="section-heading">Our Experiences</h2>
+  <p class="section-intro">
+    Discover Sri Lanka through curated journeys that blend culture, adventure, and relaxation. 
+    Each experience is designed to create lasting memories and showcase the island’s unique beauty.
+  </p>
+
+  <div class="services-grid">
+    <!-- Your service cards go here -->
+  </div>
+</section>
+ <!-- <div class="service-card">
+    <img src="images/city-tour.jpg" alt="City Tour">
+    <h3>City Tour</h3>
+    <p>Discover Colombo’s vibrant culture and landmarks.</p>
+    <button class="tourBtn" data-target="cityTourModal">Learn More</button>
+  </div>
+  -->
+  <div class="services-grid">
+  <div class="service-card">
+    <img src="images/city-tour.jpg" alt="City Tour">
+    <h3>City Tour</h3>
+    <p>Discover Colombo’s vibrant culture and landmarks.</p>
+    <button class="tourBtn" data-target="cityTourModal">Learn More</button>
+  </div>
+
+  <div class="service-card">
+    <img src="images/beach.jpg" alt="Beach Holidays">
+    <h3>Beach Holidays</h3>
+    <p>Relax on pristine beaches with golden sands and turquoise waters.</p>
+    <button class="tourBtn" data-target="beachModal">Learn More</button>
+  </div>
+
+  <div class="service-card">
+    <img src="images/safari.jpg" alt="Wild Safaris">
+    <h3>Wild Safaris</h3>
+    <p>Embark on thrilling wildlife adventures in national parks.</p>
+    <button class="tourBtn" data-target="safariModal">Learn More</button>
+  </div>
+
+  <div class="service-card">
+    <img src="images/whale.jpg" alt="Whale Watching">
+    <h3>Whale Watching</h3>
+    <p>Witness majestic whales and dolphins along the southern coast.</p>
+    <button class="tourBtn" data-target="whaleModal">Learn More</button>
+  </div>
+</div>
+
+
+<div class="tour-buttons">
+  <button class="tourBtn" data-target="cityTourModal">City Tour</button>
+  <button class="tourBtn" data-target="beachModal">Beach Holidays</button>
+  <button class="tourBtn" data-target="safariModal">Wild Safaris</button>
+  <button class="tourBtn" data-target="whaleModal">Whale Watching</button>
+</div>
+
+  <!-- City Tour Modal -->
+<div id="cityTourModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>City Tour</h2>
+    <img src="images/city-t.jpg" alt="City Tour" class="modal-img">
+    <p>City Tour 
+
+     Discover Colombo’s vibrant culture and history with our guided city tours.
+     Explore iconic landmarks, bustling markets, and hidden gems, all curated to give you an authentic urban experience..</p>
+  </div>
+</div>
+
+<!-- Beach Holidays Modal -->
+<div id="beachModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Beach Holidays</h2>
+    <img src="images/beach.jpg" alt="Beach Holidays" class="modal-img">
+    <p>Beach Holidays
+
+      Relax on Sri Lanka’s pristine beaches, where golden sands meet turquoise waters. Enjoy sun‑soaked days, water sports, and breathtaking sunsets in a tropical paradise.</p>
+  </div>
+</div>
+
+<!-- Wild Safaris Modal -->
+<div id="safariModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Wild Safaris</h2>
+    <img src="images/safari.jpg" alt="Safari tours" class="modal-img">
+    <p>Wild Safaris
+
+       Embark on thrilling wildlife safaris across Sri Lanka’s national parks. Witness elephants, leopards, and exotic birds in their natural habitats, guided by experienced rangers.</p>
+  </div>
+</div>
+
+<!-- Whale Watching Modal -->
+<div id="whaleModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Whale Watching</h2>
+    <img src="images/whale.jpg" alt="Whale Watching" class="modal-img">
+    <p>Whale Watching
+
+<ul>Experience the wonder of the ocean with our whale‑watching excursions. Spot majestic blue whales and playful dolphins along the southern coast, an unforgettable adventure at sea.</p>
+</div> 
+</div 
+</ul>
+
+  <!--
+  <li>City Tours</li>
+  <li>Beach Holidays</li>
+  <li>Wildlife Safaris</li>
+  <li>Whale Watching</li>
+  <li>Crocodile Watching</li>
+  <li>Cultural Experiences</li>
+  <li>Cookery classes</li> -->
+
+
+
+<section class="service-gallery">
+  <div class="card">
+    <img src="privatetrans.png" alt="Village Cooking" class="card-img">
+    <h3> Colombo - Airport Private Transfer with Driver-Guide</h3>
+    <p>2 hours • Pickup avail • Small Group Pickup available</p>
+  </div>
+  <div class="card">
+    <img src="cookery.jpeg" alt="Village Cooking" class="card-img">
+    <h3>Mirissa: Village Cooking Experience</h3>
+    <p>2 hours • Pickup available</p>
+  </div>
+
+  <div class="card">
+    <img src="crocodile.avif" alt="Mangrove Safari" class="card-img">
+    <h3>Weligama: Crocodile & Bird Watching</h3>
+    <p>1.5 hours • Pickup available</p>
+  </div>
+
+  <div class="card">
+    <img src="spice.avif" alt="Spice Garden Tour" class="card-img">
+    <h3>Unawatuna: Spice Garden Tour</h3>
+    <p>1 hour • Pickup available</p>
+  </div>
+
+  <div class="card">
+    <img src="citytours.jpg" alt="Colombo Airport : Private Transfer with Driver-Guide" class="card-img">
+    <h3>Private City Tours with Driver-Guide</h3>
+    <p>2 hours • Small group • Pickup available</p>
+  </div>
+
+   <div class="card">
+    <img src="collitehouse.jpg" alt="Colombo Airport : Private Transfer with Driver-Guide" class="card-img">
+    <h3>Colombo Airport : Private Transfer with Driver-Guide</h3>
+    <p>2 hours • Small group • Pickup available</p>
+  </div>
+</section>
+
+<!-- Pictures-->
+
+<!--<ul> <class="service-list">
+  <li>
+        Guided Tours
+        Hotel Bookings
+        Cookery Classes
+  </li>
+</ul>
+-->
+
+
+<!--Destination List-->
+<section id="destinations">
+  <li><a href="#destinations">Destinations</a></li>
+  <h2 class="section-heading">Popular Destinations</h2>
+  <div class="destinations-grid">
+    <div class="destination-card">
+      <img src="images/colombo.jpg" alt="Colombo">
+      <div class="caption">Colombo</div>
+    </div>
+    <div class="destination-card">
+      <img src="images/galle.jpg" alt="Galle">
+      <div class="caption">Galle</div>
+    </div>
+    <div class="destination-card">
+      <img src="images/kandy.jpg" alt="Kandy">
+      <div class="caption">Kandy</div>
+    </div>
+    <div class="destination-card">
+      <img src="images/nuwara-eliya.jpg" alt="Nuwara Eliya">
+      <div class="caption">Ella</div>
+    </div>
+  </div>
+</section>
+<!--<h2 id="destinations">*Popular Destinations</h2>
+<ol>
+  <li>Kandy</li>
+  <li>Sigiriya</li>
+  <li>Galle</li>
+  <li>Jaffna</li>
+</ol>
+-->
+
+<section class="destinations">
+  <h2>Popular Destinations</h2>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="kandy.jpg" alt="Kandy Temple of the Tooth">
+      <p>Kandy – Temple of the Tooth</p>
+    </div>
+    <div class="gallery-item">
+      <img src="sigiriya.jpg" alt="Sigiriya Lion Rock Fortress">
+      <p>Sigiriya – Lion Rock Fortress</p>
+    </div>
+    <div class="gallery-item">
+      <img src="galle.jpg" alt="Galle Fort">
+      <p>Galle – Historic Fort</p>
+    </div>
+    <div class="gallery-item">
+     <img src="jaffna.jpg" alt="Jaffna Library">
+      <p>Jaffna – Cultural Heritage</p>
+    </div>
+  </div>
+</section>
+ 
+<h2 id="contact">Contact Us</h2>
+<p>Email: cabeysiriwardhane@gmail.com</p>
+<p>Phone: +94 777 905 543</p>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="mailto:cabeysiriwardhane@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+    <input type="submit" value="Send Message">
+  </form>
+</section>
+</main>  
+
+<footer class="footer">
+  <p>&copy; 2026 CA Native Travel. All rights reserved.</p>
+  <p>
+    Follow us:
+    <a href="https://facebook.com" target="_blank">Facebook</a> |
+    <a href="https://instagram.com" target="_blank">Instagram</a> |
+    <a href="https://twitter.com" target="_blank">Twitter</a>
+  </p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
